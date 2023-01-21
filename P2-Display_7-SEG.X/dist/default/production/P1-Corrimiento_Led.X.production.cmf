@@ -1,0 +1,622 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/P1-Corrimiento_Leds.o
+code CODE 0 1FC86 1FC86 37A 1 2
+resetVect code 0 0 0 4 1 2
+udata_acs COMRAM 1 500 500 2 1 1
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 4-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-1FC85 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FC85 1
+CODE 4-1FC85 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR 4-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 502-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FC85 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/P1-Corrimiento_Leds.o
+0 resetVect code >18:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FC86 code CODE >16:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC88 code CODE >17:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC8A code CODE >19:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC8C code CODE >20:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC8E code CODE >21:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC92 code CODE >22:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC94 code CODE >25:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC96 code CODE >26:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC98 code CODE >28:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC9A code CODE >29:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FC9C code CODE >30:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCA0 code CODE >31:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCA2 code CODE >34:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCA4 code CODE >35:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCA6 code CODE >37:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCA8 code CODE >38:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCAA code CODE >39:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCAE code CODE >40:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCB0 code CODE >43:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCB2 code CODE >44:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCB4 code CODE >46:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCB6 code CODE >47:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCB8 code CODE >48:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCBC code CODE >49:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCBE code CODE >52:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCC0 code CODE >53:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCC2 code CODE >55:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCC4 code CODE >56:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCC6 code CODE >57:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCCA code CODE >58:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCCC code CODE >61:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCCE code CODE >62:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCD0 code CODE >64:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCD2 code CODE >65:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCD4 code CODE >66:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCD8 code CODE >67:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCDA code CODE >70:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCDC code CODE >71:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCDE code CODE >73:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCE0 code CODE >74:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCE2 code CODE >75:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCE6 code CODE >76:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCE8 code CODE >79:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCEA code CODE >80:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCEC code CODE >83:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCEE code CODE >84:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCF0 code CODE >86:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCF2 code CODE >87:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCF4 code CODE >88:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCF8 code CODE >89:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCFA code CODE >90:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FCFE code CODE >91:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD00 code CODE >94:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD02 code CODE >95:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD04 code CODE >98:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD06 code CODE >99:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD08 code CODE >101:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD0A code CODE >102:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD0C code CODE >103:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD10 code CODE >104:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD12 code CODE >105:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD16 code CODE >106:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD18 code CODE >109:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD1A code CODE >110:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD1C code CODE >113:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD1E code CODE >114:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD20 code CODE >116:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD22 code CODE >117:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD24 code CODE >118:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD28 code CODE >119:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD2A code CODE >120:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD2E code CODE >121:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD30 code CODE >124:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD32 code CODE >125:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD34 code CODE >128:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD36 code CODE >129:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD38 code CODE >131:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD3A code CODE >132:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD3C code CODE >133:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD40 code CODE >134:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD42 code CODE >135:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD46 code CODE >136:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD48 code CODE >139:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD4A code CODE >140:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD4C code CODE >143:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD4E code CODE >144:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD50 code CODE >146:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD52 code CODE >147:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD54 code CODE >148:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD58 code CODE >149:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD5A code CODE >150:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD5E code CODE >151:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD60 code CODE >154:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD62 code CODE >155:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD64 code CODE >158:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD66 code CODE >159:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD68 code CODE >161:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD6A code CODE >162:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD6C code CODE >163:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD70 code CODE >164:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD72 code CODE >165:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD76 code CODE >166:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD78 code CODE >169:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD7A code CODE >170:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD7C code CODE >173:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD7E code CODE >174:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD80 code CODE >176:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD82 code CODE >177:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD84 code CODE >178:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD88 code CODE >179:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD8A code CODE >180:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD8E code CODE >181:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD90 code CODE >184:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD92 code CODE >185:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD94 code CODE >188:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD96 code CODE >189:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD98 code CODE >191:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD9A code CODE >192:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FD9C code CODE >193:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FDA0 code CODE >194:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FDA2 code CODE >195:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FDA6 code CODE >196:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X/retardos.inc
+1FDA8 code CODE >21:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDAC code CODE >22:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDB0 code CODE >24:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDB2 code CODE >25:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDB6 code CODE >28:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDB8 code CODE >29:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDBA code CODE >30:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDBC code CODE >31:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDBE code CODE >32:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDC0 code CODE >33:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDC4 code CODE >34:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDC8 code CODE >36:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDCA code CODE >37:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDCE code CODE >39:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDD2 code CODE >40:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDD6 code CODE >42:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDD8 code CODE >43:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDDA code CODE >44:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDDC code CODE >45:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDDE code CODE >46:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDE0 code CODE >47:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDE2 code CODE >48:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDE6 code CODE >49:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDEA code CODE >51:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDEE code CODE >52:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDF0 code CODE >53:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDF2 code CODE >54:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDF4 code CODE >55:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDF8 code CODE >57:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDFA code CODE >58:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDFC code CODE >59:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FDFE code CODE >60:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE00 code CODE >61:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE02 code CODE >62:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE06 code CODE >63:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE0A code CODE >65:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE0C code CODE >66:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE10 code CODE >68:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE14 code CODE >69:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE18 code CODE >71:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE1A code CODE >72:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE1C code CODE >73:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE1E code CODE >74:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE20 code CODE >75:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE22 code CODE >76:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE24 code CODE >77:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE28 code CODE >78:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE2C code CODE >80:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE30 code CODE >81:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE32 code CODE >82:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE34 code CODE >83:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE36 code CODE >84:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE3A code CODE >86:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE3C code CODE >87:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE3E code CODE >88:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE40 code CODE >89:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE42 code CODE >90:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE44 code CODE >91:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE48 code CODE >92:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE4C code CODE >94:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE4E code CODE >95:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE52 code CODE >97:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE56 code CODE >98:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE5A code CODE >100:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE5C code CODE >101:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE5E code CODE >102:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE60 code CODE >103:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE62 code CODE >104:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE64 code CODE >105:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE66 code CODE >106:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE6A code CODE >107:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE6E code CODE >109:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE72 code CODE >110:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE74 code CODE >111:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE76 code CODE >112:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE78 code CODE >113:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE7C code CODE >116:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE7E code CODE >117:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE80 code CODE >118:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE82 code CODE >119:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE84 code CODE >120:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE86 code CODE >121:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE8A code CODE >122:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE8E code CODE >124:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE90 code CODE >125:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE94 code CODE >127:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE98 code CODE >128:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE9C code CODE >130:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FE9E code CODE >131:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEA0 code CODE >132:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEA2 code CODE >133:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEA4 code CODE >134:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEA6 code CODE >135:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEA8 code CODE >136:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEAC code CODE >137:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEB0 code CODE >139:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEB4 code CODE >140:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEB6 code CODE >141:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEB8 code CODE >142:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEBA code CODE >143:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEBE code CODE >145:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEC0 code CODE >146:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEC2 code CODE >147:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEC4 code CODE >148:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEC6 code CODE >149:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEC8 code CODE >150:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FECA code CODE >151:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FECE code CODE >152:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FED2 code CODE >154:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FED4 code CODE >155:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FED8 code CODE >157:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEDC code CODE >158:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEE0 code CODE >160:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEE2 code CODE >161:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEE4 code CODE >162:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEE6 code CODE >163:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEE8 code CODE >164:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEEA code CODE >165:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEEC code CODE >166:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEF0 code CODE >167:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEF4 code CODE >169:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEF8 code CODE >170:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEFA code CODE >171:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEFC code CODE >172:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FEFE code CODE >173:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF02 code CODE >176:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF04 code CODE >177:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF06 code CODE >178:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF08 code CODE >179:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF0A code CODE >180:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF0C code CODE >181:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF10 code CODE >182:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF14 code CODE >184:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF16 code CODE >185:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF1A code CODE >187:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF1E code CODE >188:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF22 code CODE >190:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF24 code CODE >191:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF26 code CODE >192:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF28 code CODE >193:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF2A code CODE >194:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF2C code CODE >195:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF2E code CODE >196:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF32 code CODE >197:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF36 code CODE >199:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF3A code CODE >200:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF3C code CODE >201:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF3E code CODE >202:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF40 code CODE >203:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF44 code CODE >205:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF46 code CODE >206:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF48 code CODE >207:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF4A code CODE >208:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF4C code CODE >209:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF4E code CODE >210:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF52 code CODE >211:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF56 code CODE >213:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF58 code CODE >214:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF5C code CODE >216:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF60 code CODE >217:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF64 code CODE >219:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF66 code CODE >220:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF68 code CODE >221:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF6A code CODE >222:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF6C code CODE >223:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF6E code CODE >224:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF70 code CODE >225:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF74 code CODE >226:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF78 code CODE >228:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF7C code CODE >229:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF7E code CODE >230:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF80 code CODE >231:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF82 code CODE >232:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF86 code CODE >234:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF88 code CODE >235:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF8A code CODE >236:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF8C code CODE >237:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF8E code CODE >238:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF90 code CODE >239:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF94 code CODE >240:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF98 code CODE >242:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF9A code CODE >243:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FF9E code CODE >245:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFA2 code CODE >246:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFA6 code CODE >248:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFA8 code CODE >249:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFAA code CODE >250:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFAC code CODE >251:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFAE code CODE >252:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFB0 code CODE >253:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFB2 code CODE >254:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFB6 code CODE >255:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFBA code CODE >257:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFBE code CODE >258:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFC0 code CODE >259:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFC2 code CODE >260:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFC4 code CODE >261:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFC8 code CODE >262:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFCC code CODE >264:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFCE code CODE >265:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFD2 code CODE >267:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFD4 code CODE >268:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFD6 code CODE >269:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFD8 code CODE >270:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFDA code CODE >271:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFDC code CODE >272:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFDE code CODE >275:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFE0 code CODE >276:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFE2 code CODE >277:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFE4 code CODE >278:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFE6 code CODE >279:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFE8 code CODE >281:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFEA code CODE >282:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFEC code CODE >283:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFEE code CODE >284:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFF0 code CODE >285:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFF2 code CODE >286:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFF4 code CODE >288:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFF6 code CODE >289:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFF8 code CODE >290:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFFA code CODE >291:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFFC code CODE >292:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+1FFFE code CODE >293:C:\uc\uC1_2022_delgado_diegoadolfo\P1-Corrimiento_Led.X\P1-Corrimiento_Leds.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 20000 0 ABS 0 - -
+__Hspace_1 502 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 4 0 ABS 0 udata_bank5 -
+__Hudata_bank6 4 0 ABS 0 udata_bank6 -
+__Hudata_bank7 4 0 ABS 0 udata_bank7 -
+__Hudata_bank8 4 0 ABS 0 udata_bank8 -
+__Hudata_bank9 4 0 ABS 0 udata_bank9 -
+__Hudata_bank10 4 0 ABS 0 udata_bank10 -
+__Hudata_bank11 4 0 ABS 0 udata_bank11 -
+__Hudata_bank12 4 0 ABS 0 udata_bank12 -
+__Hudata_bank13 4 0 ABS 0 udata_bank13 -
+__Hudata_bank14 4 0 ABS 0 udata_bank14 -
+__Hudata_bank15 4 0 ABS 0 udata_bank15 -
+__Hudata_bank16 4 0 ABS 0 udata_bank16 -
+__Hudata_bank17 4 0 ABS 0 udata_bank17 -
+__Hudata_bank18 4 0 ABS 0 udata_bank18 -
+__Hudata_bank19 4 0 ABS 0 udata_bank19 -
+__Hudata_bank20 4 0 ABS 0 udata_bank20 -
+__Hudata_bank21 4 0 ABS 0 udata_bank21 -
+__Hudata_bank22 4 0 ABS 0 udata_bank22 -
+__Hudata_bank23 4 0 ABS 0 udata_bank23 -
+__Hudata_bank24 4 0 ABS 0 udata_bank24 -
+__Hudata_bank25 4 0 ABS 0 udata_bank25 -
+__Hudata_bank26 4 0 ABS 0 udata_bank26 -
+__Hudata_bank27 4 0 ABS 0 udata_bank27 -
+__Hudata_bank28 4 0 ABS 0 udata_bank28 -
+__Hudata_bank29 4 0 ABS 0 udata_bank29 -
+__Hudata_bank30 4 0 ABS 0 udata_bank30 -
+__Hudata_bank31 4 0 ABS 0 udata_bank31 -
+__Hudata_bank32 4 0 ABS 0 udata_bank32 -
+__Hudata_bank33 4 0 ABS 0 udata_bank33 -
+__Hudata_bank34 4 0 ABS 0 udata_bank34 -
+__Hudata_bank35 4 0 ABS 0 udata_bank35 -
+__Hudata_bank36 4 0 ABS 0 udata_bank36 -
+__Hudata_bank37 4 0 ABS 0 udata_bank37 -
+__Hudata_bank38 4 0 ABS 0 udata_bank38 -
+__Hudata_bank39 4 0 ABS 0 udata_bank39 -
+__Hudata_bank40 4 0 ABS 0 udata_bank40 -
+__Hudata_bank41 4 0 ABS 0 udata_bank41 -
+__Hudata_bank42 4 0 ABS 0 udata_bank42 -
+__Hudata_bank43 4 0 ABS 0 udata_bank43 -
+__Hudata_bank44 4 0 ABS 0 udata_bank44 -
+__Hudata_bank45 4 0 ABS 0 udata_bank45 -
+__Hudata_bank46 4 0 ABS 0 udata_bank46 -
+__Hudata_bank47 4 0 ABS 0 udata_bank47 -
+__Hudata_bank48 4 0 ABS 0 udata_bank48 -
+__Hudata_bank49 4 0 ABS 0 udata_bank49 -
+__Hudata_bank50 4 0 ABS 0 udata_bank50 -
+__Hudata_bank51 4 0 ABS 0 udata_bank51 -
+__Hudata_bank52 4 0 ABS 0 udata_bank52 -
+__Hudata_bank53 4 0 ABS 0 udata_bank53 -
+__Hudata_bank54 4 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/production/P1-Corrimiento_Leds.o
+__Hedata 4 0 ABS 0 edata -
+__Hudata 4 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata 4 0 ABS 0 edata -
+__Ludata 4 0 ABS 0 udata -
+__Hcode 4 0 ABS 0 code -
+__Hdata 4 0 ABS 0 data -
+__Lcode 4 0 ABS 0 code -
+__Ldata 4 0 ABS 0 data -
+__S0 20000 0 ABS 0 - -
+__S1 502 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 4 0 ABS 0 udata_bank10 -
+__Ludata_bank11 4 0 ABS 0 udata_bank11 -
+__Ludata_bank12 4 0 ABS 0 udata_bank12 -
+__Ludata_bank13 4 0 ABS 0 udata_bank13 -
+__Ludata_bank14 4 0 ABS 0 udata_bank14 -
+__Ludata_bank15 4 0 ABS 0 udata_bank15 -
+__Ludata_bank16 4 0 ABS 0 udata_bank16 -
+__Ludata_bank17 4 0 ABS 0 udata_bank17 -
+__Ludata_bank18 4 0 ABS 0 udata_bank18 -
+__Ludata_bank19 4 0 ABS 0 udata_bank19 -
+__Ludata_bank20 4 0 ABS 0 udata_bank20 -
+__Ludata_bank21 4 0 ABS 0 udata_bank21 -
+__Ludata_bank22 4 0 ABS 0 udata_bank22 -
+__Ludata_bank23 4 0 ABS 0 udata_bank23 -
+__Ludata_bank24 4 0 ABS 0 udata_bank24 -
+__Ludata_bank25 4 0 ABS 0 udata_bank25 -
+__Ludata_bank26 4 0 ABS 0 udata_bank26 -
+__Ludata_bank27 4 0 ABS 0 udata_bank27 -
+__Ludata_bank28 4 0 ABS 0 udata_bank28 -
+__Ludata_bank29 4 0 ABS 0 udata_bank29 -
+__Ludata_bank30 4 0 ABS 0 udata_bank30 -
+__Ludata_bank31 4 0 ABS 0 udata_bank31 -
+__Ludata_bank32 4 0 ABS 0 udata_bank32 -
+__Ludata_bank33 4 0 ABS 0 udata_bank33 -
+__Ludata_bank34 4 0 ABS 0 udata_bank34 -
+__Ludata_bank35 4 0 ABS 0 udata_bank35 -
+__Ludata_bank36 4 0 ABS 0 udata_bank36 -
+__Ludata_bank37 4 0 ABS 0 udata_bank37 -
+__Ludata_bank38 4 0 ABS 0 udata_bank38 -
+__Ludata_bank39 4 0 ABS 0 udata_bank39 -
+__Ludata_bank40 4 0 ABS 0 udata_bank40 -
+__Ludata_bank41 4 0 ABS 0 udata_bank41 -
+__Ludata_bank42 4 0 ABS 0 udata_bank42 -
+__Ludata_bank43 4 0 ABS 0 udata_bank43 -
+__Ludata_bank44 4 0 ABS 0 udata_bank44 -
+__Ludata_bank45 4 0 ABS 0 udata_bank45 -
+__Ludata_bank46 4 0 ABS 0 udata_bank46 -
+__Ludata_bank47 4 0 ABS 0 udata_bank47 -
+__Ludata_bank48 4 0 ABS 0 udata_bank48 -
+__Ludata_bank49 4 0 ABS 0 udata_bank49 -
+__Ludata_bank50 4 0 ABS 0 udata_bank50 -
+__Ludata_bank51 4 0 ABS 0 udata_bank51 -
+__Ludata_bank52 4 0 ABS 0 udata_bank52 -
+__Ludata_bank53 4 0 ABS 0 udata_bank53 -
+__Ludata_bank54 4 0 ABS 0 udata_bank54 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/P1-Corrimiento_Leds.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect 4 0 code 0 resetVect -
+__Ludata_bank5 4 0 ABS 0 udata_bank5 -
+__Ludata_bank6 4 0 ABS 0 udata_bank6 -
+__Ludata_bank7 4 0 ABS 0 udata_bank7 -
+__Ludata_bank8 4 0 ABS 0 udata_bank8 -
+__Ludata_bank9 4 0 ABS 0 udata_bank9 -
+__LresetVect 0 0 code 0 resetVect -
+__Hudata_acs 4 0 ABS 0 udata_acs -
+__Ludata_acs 4 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+code 0 1FC86 1FC86 37A 1
+udata_acs 1 500 500 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
