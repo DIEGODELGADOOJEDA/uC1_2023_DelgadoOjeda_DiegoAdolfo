@@ -22,3 +22,4 @@ PRACTICAS:
 -Practica de puertos
  1.Corrimiento de leds
  2.Display alfanumerico
+-Parcial 2
